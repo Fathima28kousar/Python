@@ -18,9 +18,13 @@ print(age)
 
 number = 18
 print(float(number))
-first = input("enter first number : ")
-second = input("enter second number : ")
-sum = int(first) + int(second)
-print(sum)
 
+
+name = "fathima"
+print(name)
+
+name = input("What is your name ?")
+print("Hello " + name)
+superhero = input("Who is your superhero ? ")
+print(name +" " + "superhero is " +superhero)
 
