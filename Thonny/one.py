@@ -88,12 +88,36 @@ else:
 numbers = range(200)
 print(numbers)
 
+i = 1
+while i<= 5:
+    print(i * "*")
+    i = i + 1
 
+i = 5
+while i>= 0:
+    print(i * "*")
+    i = i - 1
 
+for item in range(5):
+    print(item +6)
+marks = [95,56,66]
+print(marks)
 
+marks = [95,78,90]
+print(marks[1:3])
 
+marks = [45,50,49]
+for score in marks:
+    print(score)
 
+marks = [20,23,25]
 
+i = 0
+while i < len(marks):
+    print(marks[i])
+    i = i + 1
+marks.clear()
+print(marks)
 
 
 
