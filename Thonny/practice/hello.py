@@ -17,11 +17,54 @@ while i<= 5:
 '''for item in range(5):
     print(item)'''
     
-marks = [97,89,99]
+'''marks = [97,89,99]
 i = 0
 while i<len(marks):
     print(marks[i])
     i=i+1
+'''
+li1 = []
+li2 = [10,20,30]
+li3 = [10,29,30,40,10,20]
+li4 = [10,20,30,40,"rahul"]
+print(li1)
+print(li2)
+print(li3)
+print(li4)
+#l5 = list(input("Enter list: "))
+#l6 = eval(input("enter list: "))
+li7 = list(["hello"])
+print(li7)
+st = "hello,gn"
+li10 = st.split()
+print(li10)
+li8 = "hello good morning,wekcome to python"
+print(li8)
+li9 = li2.copy()
+print(li9)
+li10 = li2[1:]
+print(li10)
+
+li10 = st.split()
+print(li10)
+ids = [10,20,30,40,50]
+i = 0
+while i<len(ids):
+    print(ids[i])
+    i = i+1
+for id in ids:
+    print(id)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
