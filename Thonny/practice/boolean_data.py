@@ -37,7 +37,8 @@ zipcode = "10001"
 zip_value = int(zipcode)
 print(type(zip_value))
 
-
+for i in range(0,10):
+    print(i)
 
 
 

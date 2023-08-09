@@ -27,7 +27,7 @@ elif per<=45 and per>=25:
 else:
     print("grade is D")
 '''
-sal = int(input("Enter the salary: "))
+'''sal = int(input("Enter the salary: "))
 ex = int(input("Years of experience: "))
 if ex>10:
     b = 10/100*sal
@@ -35,9 +35,9 @@ elif ex>=6 and ex<=10:
     b = 8/100*sal
 elif ex<6:
     b = 5/100*sal
-print("your bonus is ",b)
-
-
+print("your bonus is ",b)'''
+print("Hello world",7)
+print("I am a good girl \nand this viewer is also a good girl")
 
 
 
