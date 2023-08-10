@@ -22,4 +22,18 @@ else:
     print("Invalid input")    
     
     
-    
+ first = int(input("Enter the first number: "))
+op = input("Enter the operator [+,-,/,%,*]: ")
+second = int(input("Enter the second number: "))
+if op == "+":
+    print(first+second)
+elif  op == "-":
+    print(first-second)
+elif  op == "/":
+    print(first/second)    
+elif  op == "%":
+    print(first%second)
+elif  op == "*":
+    print(first*second)   
+else:
+    print("invalid statement")          
