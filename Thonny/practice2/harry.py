@@ -73,5 +73,33 @@
 # a = "newyork"
 # b = int(a)
 # print(b)
-value = int(input("enter your name:\n "))
-print(value)
+# value = int(input("enter your name:\n "))
+# print(value)
+# num = int(input("enter the number : "))
+# if num<0:
+#     print("num is negative")
+# elif num>0:
+#     print("num is positive")
+#     if num<=10:
+#         print("num is between 1-10")
+#     elif num>10 and num<=20:
+#         print("num is between 11-20")
+#     else:
+#         print("num is greater than 20")   
+# else:
+#     print("num is zero")         
+# p = 111119%1000
+# print(p)
+# city = input("enter any city name : ")
+# city.lower == "delhi"
+# print(city)
+# num = input("enter the number : ")
+# l = len(num)
+# if l!=3:
+#     print("please enter the 3 digit number")
+# else:
+#     print("it is a 3 digit number,and the middle number is : ",int(num)%100//10)    
+# print("hello world",7)
+# print("hello world" ,7)
+# print("hello",6,7,sep='~',end='\n009')
+
