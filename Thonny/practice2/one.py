@@ -79,10 +79,52 @@ news = ['bob', 'Robbert', 'jpj', 'Alex', 'good', 'bye']
 # print("list : ")
 # for element in a:
 #     print(element)    
-a = []
-n = int(input("enter no. of elements : "))
-for i in range(n):
-    a.append(int(input("enter the number : ")))
-print("list :")
-for elements in a:
-    print(elements)    
+# a = []
+# n = int(input("enter no. of elements : "))
+# for i in range(n):
+#     a.append(int(input("enter the number : ")))
+# print("list :")
+# for elements in a:
+#     print(elements)   
+# a = "10"
+# b = "12"
+# print(int(a)+int(b))
+# c = 1.9
+# d = 2
+# print(c+d)
+# apple = "Hello"
+# for ch in apple:
+#     print(ch)
+# multiline = '''   
+#    hello      iam good
+#    hey'''
+# for ch in multiline:
+#     print(ch)
+# a = "!!!!!!harry harry harry harry!!!"
+# # print(a.upper())
+# # print(a.lower())
+# print(a.rstrip("!"))
+# print(a.lstrip("!"))
+# print(a.split("!"))
+# str2 = "welcome to console!!"
+# print(str2)
+# print(len(str2))
+# print(str2.center(50))
+# print(len(str2.center(50)))
+#build a menu
+# title = "menu".upper()
+# print(title.center(20,"*"))
+# print(" ")
+# print("coffee".ljust(20,".") + "$1".rjust(8))
+# print("cake".ljust(20,".")+ "$5".rjust(8))
+# print("cold drink".ljust(20,".")+ "$5".rjust(8))
+# print("cheese cake".ljust(20,".")+ "$1".rjust(8))
+# print("milk shake".ljust(20,".")+ "$8".rjust(8))
+a ="Fathima  iS an hoNEStgirl"
+print(a.isalnum())
+print(a.isalpha())
+print(a.islower())
+print(a.isprintable())
+print(a.isspace())
+print(a.istitle())
+print(a.swapcase())
