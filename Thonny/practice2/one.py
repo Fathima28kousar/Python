@@ -120,11 +120,23 @@ news = ['bob', 'Robbert', 'jpj', 'Alex', 'good', 'bye']
 # print("cold drink".ljust(20,".")+ "$5".rjust(8))
 # print("cheese cake".ljust(20,".")+ "$1".rjust(8))
 # print("milk shake".ljust(20,".")+ "$8".rjust(8))
-a ="Fathima  iS an hoNEStgirl"
-print(a.isalnum())
-print(a.isalpha())
-print(a.islower())
-print(a.isprintable())
-print(a.isspace())
-print(a.istitle())
-print(a.swapcase())
+# a ="Fathima  iS an hoNEStgirl"
+# print(a.isalnum())
+# print(a.isalpha())
+# print(a.islower())
+# print(a.isprintable())
+# print(a.isspace())
+# print(a.istitle())
+# print(a.swapcase())
+# name = "Harry"
+# for i in name:
+#     print(i)
+#     if (i=="a"):
+#         print("this is something")
+# colors = ["red","blue","green","yellow"]
+# for color in colors:
+#     print(color)
+#     for i in color:
+#         print(i)
+for k in range(1,9):
+    print(k)
