@@ -131,9 +131,19 @@
 # print(my_function(3))
 # print(my_function(4))
 # print(my_function(5))
-def calc(a,b,c=0):
-   return a+b+c
-r1 = calc(10,20)
-r2 = calc(10,20,30)
-print(r1)
-print(r2)
+# def calc(a,b,c=0):
+#    return a+b+c
+# r1 = calc(10,20)
+# r2 = calc(10,20,30)
+# print(r1)
+# print(r2)
+def outer():
+    print("y")
+    a = 100
+    def inner():
+        print("g")
+        print(a)
+        outer()
+        inner()
+outer()
+     
