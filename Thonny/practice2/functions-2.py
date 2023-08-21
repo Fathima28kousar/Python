@@ -71,10 +71,9 @@
 # x = map(add,("sonia","rahul","priyanka"))
 # print(x)
 # print(list(x))
-def add(name):
-    return name.upper()
+# def add(name):
+#     return name.upper()
 
-x = map(add,("sonia","gandhi"))
-print(x)
-print(list(x))
-    
+# x = map(add,("sonia","gandhi"))
+# print(x)
+# print(list(x))
