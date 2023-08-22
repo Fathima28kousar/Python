@@ -117,16 +117,18 @@
 #         a,b = b,a
 #     print(a/b)
 # div(2,4)    
-def decor(fun):
-    def inner():
-        print("If : Before enhancing")
-        fun()
-        print("If : After enhancing")
-    return inner
+# def decor(fun):
+#     def inner():
+#         print("If : Before enhancing")
+#         fun()
+#         print("If : After enhancing")
+#     return inner
    
 
-@decor
-def num():
-    print("we will use this function")
-    print("we will enhance")
-fun() 
+# @decor
+# def num():
+#     print("we will use this function")
+#     print("we will enhance")
+# num() 
+
+
