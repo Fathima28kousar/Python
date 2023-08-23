@@ -113,8 +113,8 @@
 # print(D["amit"]+D["sunil"])
     # m = {1: "Jan",2:"June",3:"August"}
     # print(m[1])
-num = {1:10,2:20,3:30}
-print(num)
-print(num.items())
-print(len(num))
-print(num.pop(2))
+# num = {1:10,2:20,3:30}
+# print(num)
+# print(num.items())
+# print(len(num))
+# print(num.pop(2))

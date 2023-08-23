@@ -42,17 +42,45 @@
 # print(str1.istitle())
 # print("max"[::-1].startswith("x"))
 # print(max("my name is"))
-def my_decorator(func):
-    def wrapper():
-        print("Something is happening before the function is called.")
-        func()
-        print("Something is happening after the function is called.")
-    return wrapper
+# def my_decorator(func):
+#     def wrapper():
+#         print("Something is happening before the function is called.")
+#         func()
+#         print("Something is happening after the function is called.")
+#     return wrapper
 
+# @my_decorator
+# def say_hello():
+#     print("Hello!")
+
+# say_hello()
+
+
+def decor(func):
+       def inner():
+              print("something before")
+              func()
+              print("something after")
+       return inner   
+
+
+
+@decor 
 def say_hello():
-    print("Hello!")
+    print("Hello")
 
-say_hello = my_decorator(say_hello)
+say_hello()    
 
-say_hello()
 
+# ef decor(func):
+#     def inner():
+#         print("something before")
+#         func()
+#         print("something after")
+#     return inner
+
+# @decor 
+# def say_hello():
+#     print("Hello")
+
+# say_hello() 

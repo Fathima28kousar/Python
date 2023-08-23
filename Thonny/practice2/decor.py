@@ -58,29 +58,64 @@
 # def add(name):
 #     print("hello",name)
 # add("rahul")    
-def decorator(func):
-    def wrap(*args, **kwargs):
-        # Log the function name and arguments
-        print(f"Calling {func.__name__} with args: {args}, kwargs: {kwargs}")
-        
-        # Call the original function
-        result = func(*args, **kwargs)
-        
-        # Log the return value
-        print(f"{func.__name__} returned: {result}")
-        
-        # Return the result
-        return result
-    return wrap
+# def decor(fun):
+#     def inner(*args,**kwargs):
+#             print("before the function","before the function")
+#             print("before the function","before the function")
+#             fun(*args,**kwargs)
+#             print("after the function")
+#     return  inner     
 
-# Example usage
-@decorator
-def multiply_numbers(x, y):
-    return x * y
 
-# Call the decorated function
-result = multiply_numbers(10, 20)
-print("Result:", result)
+# @decor 
+# def greet(name,fame,lname):
+#       print("Hello!",name,fame)
+
+# greet("python","python","famr")
+# def decor(fun):
+#     def inner(*args,**kwargs):
+#         print("before")
+#         result = fun(*args,**kwargs)
+#         print("after")
+#         return result
+#     return inner    
+    
+
+
+# @decor 
+# def add(x, y ):
+#     return x+y
+
+# result = add(5,6)
+# print(result)
+# def decor_1(func):
+#     def inner():
+#         print("before")
+#         func()
+        
+#     return inner
+
+# def decor_2(func):
+#     def inner():
+#         print("b1")
+#         func()
+        
+#     return inner        
+
+
+# @decor_1
+# @decor_2
+# def greet():
+#     print("hello")
+
+# greet() 
+# x = lambda n:n*2
+# print(x(5))
+# for i in [2,1,5]:
+#     print(i)
+    
+
+   
 
 
 
