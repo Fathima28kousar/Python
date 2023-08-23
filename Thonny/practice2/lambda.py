@@ -60,11 +60,11 @@
 # x = message()    
 # print(x)
 
-for i in range(10):
-    print(i)
+# for i in range(10):
+#     print(i)
 
-for i in range(1,10):
-    print(i)
+# for i in range(1,10):
+#     print(i)
 
-for i in range(1,10):
-    print(i,end="  ")        
+# for i in range(1,10):
+#     print(i,end="  ")        

@@ -77,3 +77,16 @@
 # x = map(add,("sonia","gandhi"))
 # print(x)
 # print(list(x))
+# def add():
+#     y = 20
+#     return (lambda x:x+y)
+# result = add()
+# print(result(3))
+# def show(a):
+#     print(a(8))
+# show(lambda x:x+5)   
+# def add(n):
+#     return lambda x:x*n
+# result = add(7)
+# print(result(3))
+     
