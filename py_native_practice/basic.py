@@ -65,19 +65,27 @@
 # n = str.count("Hello")
 # print("Hello is appeared ", n ," times")
 #***********14th question********************** Print downward Half-Pyramid Pattern with Star (asterisk)
-for i in range(5, 0, -1):
-    for j in range(0, i - 1):
-        print("#", end=' ')
-    print(" ")
-#***********14th question********************** 
-for i in range(4):
-    for j in range(4 - i):        #not getting the pattern
-        print("#", end=" ")
-#***********13th question********************** Print multiplication table form 1 to 10
-for i in range(1,11):
-    for j in range (1,11): 
-        print(i*j,end ="  ")  
-    print("\t\t")        
+# for i in range(5, 0, -1):
+#     for j in range(0, i - 1):
+#         print("#", end=' ')
+#     print(" ")
+# #***********14th question********************** 
+# for i in range(4):
+#     for j in range(4 - i):        #not getting the pattern
+#         print("#", end=" ")
+# #***********13th question********************** Print multiplication table form 1 to 10
+# for i in range(1,11):
+#     for j in range (1,11): 
+#         print(i*j,end ="  ")  
+#     print("\t\t")        
+# #***********11th question********************** Write a Program to extract each digit from an integer in the reverse order.
+num  = "hello"
+reverse = num[::-1]
+print(reverse)
+
+nulm = 23456
+reverse = nulm[::-1]
+print(reverse)
 
                    
 
