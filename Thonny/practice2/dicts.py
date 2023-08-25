@@ -118,3 +118,18 @@
 # print(num.items())
 # print(len(num))
 # print(num.pop(2))
+# employees =[{"id":1,"first_name":"Franzen","gender":"Male"},
+#             {"id":2,"first_name":"Hendrik","gender":"Male"},
+#             {"id":3,"first_name":"Nonie","gender":"Female"},
+#             {"id":4,"first_name":"Shermy","gender":"Male"},
+#             {"id":5,"first_name":"Chet","gender":"Male"}]
+# for emp in employees:
+#     print(emp["first_name"])
+# i = 0
+# while i<len(employees):
+#     print(employees[i]["first_name"])
+#     i = i+1
+A = {"jan":39 ,"feb":28 ,"march":31}
+print(max(A.values()))
+print(max(A.keys()))
+print(max(A.items()))
