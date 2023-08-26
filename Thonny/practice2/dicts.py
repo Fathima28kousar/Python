@@ -129,7 +129,9 @@
 # while i<len(employees):
 #     print(employees[i]["first_name"])
 #     i = i+1
-A = {"jan":39 ,"feb":28 ,"march":31}
-print(max(A.values()))
-print(max(A.keys()))
-print(max(A.items()))
+A= {1:"one", 2:"two", 3:"three", 4:"four"}
+B = {"A": "apple" , "B": "bat" , "c":"cat", "d" :"doll"}
+print(A.get(2))
+print(B.get("c"))
+print(A.get(5)) #this key is not available in dictionary A so return None
+print(A.get(5),"key not found") #we can specify our message to display if key not found

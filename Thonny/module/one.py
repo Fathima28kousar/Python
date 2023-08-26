@@ -1,6 +1,3 @@
-from funcs import *
-
-a = 5
-b = 10
-c = add(a, b)
-print(c)
+eid = 101
+ename = "Rahul"
+help("modules")

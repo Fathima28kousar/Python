@@ -1,8 +1,19 @@
+
 def add(a, b):
     return a + b
 
 def sub(a,b):
     return a-b
 
-def div(a,b):
+def divi(a,b):
     return a/b
+
+def multi(a,b):
+    return a*b
+
+def floo(a,b):
+    return a//b
+
+help("modules")
+help("keywords")
+help("symbols")
