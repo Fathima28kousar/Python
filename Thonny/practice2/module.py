@@ -73,5 +73,16 @@
 #         even_numbers.append(num)
 
 # print("Random even numbers:", even_numbers)
-import math
-print(math.floor(23.99))  #o/u 9
+# import
+#  datetime
+# x = datetime.datetime.now()
+# print(x.year)
+# print(x.strftime("%A"))
+# import datetime
+# x = datetime.datetime(2020,5,17)
+# print(x)
+
+import random
+for num in range(3):
+    x = random.randrange(100,1000,5)
+    print(x,end=" ")
