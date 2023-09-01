@@ -209,7 +209,7 @@ print(emp_1.pay)
 print(Employee.__dict__)
 print(emp_2.pay)
 '''
-
+'''
 class Computer:
     def config(self):
         print("i5,16 Gb,1tb")
@@ -222,4 +222,4 @@ com2 = Computer()
 Computer.config(com1)
 Computer.config(com2)
 com1.config()
-com2.config()
+com2.config()'''
