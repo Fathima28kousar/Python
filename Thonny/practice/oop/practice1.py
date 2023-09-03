@@ -131,6 +131,115 @@ print(dict1)
 dict2 = {i:i*2 for i in range(20) if i%2==0 if i%3==0}
 print(dict2)'''
 
-list = [(101,"Rahul"),(102,"Raj")]
+'''list = [(101,"Rahul"),(102,"Raj")]
 dict = {k:v for k,v in list}
-print(dict)
+print(dict)'''
+
+
+'''num = int(input("Enter the number : "))
+for i in range (num+1):
+    for j in range(i+1):
+        print(j+1,end =" ")
+    print()      '''
+
+'''import math
+print(math.floor(9.7))
+print(math.floor(-41.444))
+print(math.ceil(-40.34))
+print(math.pow(2,3))
+print(math.sqrt(625))
+print(math.fabs(-33))
+print(math.pi)
+print(math.e)
+print(math.sin(90))
+print(math.cos(90))
+print(math.tan(90))
+'''
+'''import statistics
+print(statistics.median([20,30,40,50,60]))
+print(statistics.mean([20,30,40,50,60]))
+print(statistics.mode([20,30,40,50,60]))'''
+
+
+'''a = random.randrange(30)
+print(a)
+b = random.randrange(40)
+print(b)
+names = ["fathima","kousar","lubna","sadiya","naseera","banu"]
+c = random.randrange(len(names))
+print(names[c])'''
+
+# print(random.random()*6+10)
+# print(random.random()*900+100)
+# print(random.random()*90+10)
+
+
+
+'''highest = int(input("Enter the highest limit : "))
+lowest = int(input("Enter the lowest limit : "))
+even=[]
+while len(even)<=5:
+    num= random.randint(lowest,highest)
+    if num%2==0:
+        even.append(num)
+print("Random even numbers are : ", even)
+'''
+
+
+'''import datetime
+x = datetime.datetime(2020,5,17)
+print(x.strftime("%B"))'''
+
+'''import os 
+if os.path.exists("one.txt"):
+    os.remove("one.txt")
+else:
+    print("the file does not exist")'''
+'''
+import os
+os.rmdir("folder")'''
+
+import json
+x = {
+    "name":"john",
+    "age": 30,
+    "avail":True,
+    "hello":None
+}
+
+'''y = json.dumps(x)
+print(y)
+print(json.dumps(x,indent=4))
+print(json.dumps(x,indent=4,sort_keys=True))'''
+
+# tuple1 = (50,60,70,10,20)
+# a,b,c,d,e=tuple1
+# print(tuple1)
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+# print(e)
+
+# tuple2 = (10,20,30,40,50)
+# tuple3 = (10,20,30)
+# tuple2,tuple3 = tuple3,tuple2
+# print(tuple3)
+# print(tuple2)
+
+# tuple2 = (10,20,30,40,50)
+# tuple1= tuple2[2:5]
+# print(tuple1)
+'''file = open("data.txt","r")
+data = file.read()
+c = 0
+for i in data:
+    if i== "a":
+        c = c+1
+print("frequency of alphabet a is: ",c)  '''      
+file = open("data.txt","r")
+data = file.read()
+print("Total number of ch in a file are:",len(data))
+
+
+
