@@ -81,3 +81,12 @@ print("Number of lines starting with 'A':", c)'''
             print(i)
 displaywords()'''
 
+def lowercase():
+    f = open("story.txt","r")
+    d = f.read()
+    c = 0
+    for i in d:
+        if i.islower():
+             c = c+1    
+    print("total lowercase char are: ",c)
+lowercase()
