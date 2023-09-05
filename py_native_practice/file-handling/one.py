@@ -95,4 +95,66 @@ displaywords()'''
 # print(bin(25))
 # print(bin(31))
 # print(bin(65))
-print(0b110011010)
+'''class Bank:
+    bank_name = "BOI"
+    rate_of_interest = 12.25
+    @staticmethod
+    def simple_interest(prin,n):
+        si = (prin*n*Bank.rate_of_interest)/100
+        print(si)
+prin = float(input("Enter principal amount : "))
+n = int(input("Enter no. of years: "))
+Bank.simple_interest(prin,n)
+'''
+
+# file = open("roll.txt","w")
+# for i in range(2):
+#     name = input("Enter name : ")
+#     roll_number = input("Enter roll number : ")
+#     file.write("Roll no.: " + roll_number + "\tname: " + name + "\n")
+# file.close()    
+
+'''# file = open("story.txt","r")
+# data = file.read()
+# c = 0
+# for i in data:
+#     if i=="a":
+#         c = c+1
+# print("frequency of a is : ",c)'''
+
+
+# file = open("story.txt","r")
+# data = file.read()
+# print("total number of characters in data is :" , len(data))
+
+
+# f = open("story.txt","r")
+# data = f.read()
+# cm = 0
+# ca = 0
+# for i in data:
+#     if i =="m" or i == "M":
+#         cm+=1
+#     if i == "a" or i=="A":
+#         ca+=1
+# print("A for a ",ca ,"\nM for m ",cm)            
+
+'''# f = open("story.txt","r")
+# data = f.readlines()
+# c = 0
+# for i in data:
+#     if i[0] =="A" or i[0]=="a":
+#         c = c+1
+# f.close()
+# print("number of A are",c)        
+'''
+# f = open("story.txt","r")
+# data = f.read()
+# m = data.split()
+# for i in m:
+#     if len(i)<=4:
+#         print(len(i))     
+
+       
+
+     
