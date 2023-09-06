@@ -155,6 +155,15 @@ Bank.simple_interest(prin,n)
 #     if len(i)<=4:
 #         print(len(i))     
 
-       
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword"
+)
+
+print(mydb)       
 
      
