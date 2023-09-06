@@ -35,8 +35,36 @@ class Bank(ABC):
     @abstractmethod
     def cal_bal(self):
         pass
-class Account(Bank):
-    def cal_bal(self):
-        print("Bal is")
-a1 = Account()
-a1.cal_bal()
+# class Account(Bank):
+#     def cal_bal(self):
+#         print("Bal is")
+# a1 = Account()
+# a1.cal_bal()
+
+from abc import ABC,abstractmethod
+
+class Car (ABC):
+    @abstractmethod
+    def mileage(self):
+        pass
+    def color(self):
+        print("white")
+
+class Maruti_suzuki(Car):
+    def mileage(self):
+        print("mileage is 30 kmph")
+
+ 
+class TATA(Car):
+    def mileage(self):
+        print("mileage is 35 kmph")    
+
+
+class Duster(Car):
+    def mileage(self):
+        print("mileage is 40 kmph")           
+
+m1 = Maruti_suzuki()
+t1 = TATA()
+d1 = Duster()
+t1.mileage()
