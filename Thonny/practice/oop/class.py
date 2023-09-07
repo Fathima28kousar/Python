@@ -100,6 +100,12 @@ print(Employee.__dict__)
         self.name = name
         self.salary = salary
 
+    @classmethod
+    def design_name(cls):
+        cls.design_name = "css"
+        print(cls.design_name)
+        print("THE DESIGN NAME IS-",cls.design_name)
+
 e1 = Employee("rahul",123)
 e2 = Employee("soniya",3444)
 
@@ -109,4 +115,49 @@ print(Employee.company_name)
 e2.company_name = "capegemini"
 print(e2.company_name)
 print(Employee.company_name)
-'''
+Employee.design_name()'''
+
+# class Bank:
+#     bank_name = "BOI"
+#     rate_of_interest = 12.25
+
+#     @staticmethod
+#     def simple_interest(prin,n):
+#         si = (prin*n*Bank.rate_of_interest)/100
+#         print(si)
+# prin = float(input("Enter the principal amount:"))
+# n = int(input("Enter the no. of years :"))
+# Bank.simple_interest(prin,n)              
+'''class Employee:
+    bonus = 2000
+    def display(self):
+        print("Employee class method")
+
+class Manager(Employee):
+    bonus1 = 5000
+    def show(self):
+        print("Manager class method")
+
+e1 = Employee()
+m1 = Manager()
+
+e1.display()
+m1.display()
+m1.show()
+
+print(m1.bonus1)
+print(e1.bonus)'''
+
+
+class Computer(object):
+    def __init__(self,ram,storage):
+        self.ram = ram
+        self.storage = storage
+        print("computer class constructor")
+
+class Mobile(Computer):
+    def __init__(self,ram,storage):
+        self.model = 
+
+a1 = Mobile()
+print(a1.__dict__)
