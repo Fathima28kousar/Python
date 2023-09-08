@@ -149,7 +149,7 @@ print(m1.bonus1)
 print(e1.bonus)'''
 
 
-class Computer(object):
+''''class Computer(object):
     def __init__(self,ram,storage):
         self.ram = ram
         self.storage = storage
@@ -160,4 +160,84 @@ class Mobile(Computer):
         self.model = 
 
 a1 = Mobile()
-print(a1.__dict__)
+print(a1.__dict__)'''
+
+'''class Human_being(object):
+    def __init__(self):
+        print("human being constructor is called")
+        self.name = input("Enter your name:")
+
+class Employee(Human_being):
+    def __init__(self):
+        print("Employee constructor is called ")
+        self.salary = float(input("Enter your salary:"))
+
+class Manager(Employee):
+    
+    def __init__(self):
+        print("Manager constructor is called")
+        self.bonus = float(input("Enter the bonus: "))
+
+m1 = Manager()
+print(m1.salary)
+print(m1.name)'''
+
+# class Human_being(object):
+#     salary = 1000
+#     name1 = "Jayuuu"
+
+# class Employee(Human_being):
+#     salary = 2000
+#     name = "Jay"
+
+# class Manager(Employee):
+#     salary = 5000
+
+# m1 = Manager()
+
+# print(m1.salary)
+# print(m1.name1)
+# print(m1.name)
+# print(m1.__dict__)
+
+class Person:
+    def __init__(self,nm,ag):
+        self.name = nm
+        self.age = ag
+
+    def display0(self):
+        print("This is a person display method")
+    
+class Employee(Person):
+    def __init__(self,nm,ag,sal):
+        super().__init__(nm,ag)
+        self.salary = sal
+
+    def display1(self):
+        print("This is a Employee display method")
+
+class Student(Person):
+    def __init__(self,nm,ag,m):
+        super().__init__(nm,ag)
+        self.marks = m
+
+    def display2(self):
+        print("This is a Student display method")
+
+s1 = Student("jay",21,90)  
+e1 = Employee("raj",45,30000)
+p1 = Person("fathima",24)
+print(e1)
+print(s1)
+print(e1.__dict__)
+print(s1.__dict__)
+print(p1.__dict__)
+
+s1.display0()
+e1.display0()
+# s1.display1()
+e1.display1()
+e1.display0()
+s1.display2()
+ 
+
