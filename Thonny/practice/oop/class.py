@@ -200,44 +200,137 @@ print(m1.name)'''
 # print(m1.name)
 # print(m1.__dict__)
 
-class Person:
-    def __init__(self,nm,ag):
-        self.name = nm
-        self.age = ag
+# class Person:
+#     def __init__(self,nm,ag):
+#         self.name = nm
+#         self.age = ag
 
-    def display0(self):
-        print("This is a person display method")
+#     def display0(self):
+#         print("This is a person display method")
     
-class Employee(Person):
-    def __init__(self,nm,ag,sal):
-        super().__init__(nm,ag)
-        self.salary = sal
+# class Employee(Person):
+#     def __init__(self,nm,ag,sal):
+#         super().__init__(nm,ag)
+#         self.salary = sal
 
-    def display1(self):
-        print("This is a Employee display method")
+#     def display1(self):
+#         print("This is a Employee display method")
 
-class Student(Person):
-    def __init__(self,nm,ag,m):
-        super().__init__(nm,ag)
-        self.marks = m
+# class Student(Person):
+#     def __init__(self,nm,ag,m):
+#         super().__init__(nm,ag)
+#         self.marks = m
 
-    def display2(self):
-        print("This is a Student display method")
+#     def display2(self):
+#         print("This is a Student display method")
 
-s1 = Student("jay",21,90)  
-e1 = Employee("raj",45,30000)
-p1 = Person("fathima",24)
-print(e1)
-print(s1)
-print(e1.__dict__)
-print(s1.__dict__)
-print(p1.__dict__)
+# s1 = Student("jay",21,90)  
+# e1 = Employee("raj",45,30000)
+# p1 = Person("fathima",24)
+# print(e1)
+# print(s1)
+# print(e1.__dict__)
+# print(s1.__dict__)
+# print(p1.__dict__)
 
-s1.display0()
-e1.display0()
-# s1.display1()
-e1.display1()
-e1.display0()
-s1.display2()
+# s1.display0()
+# e1.display0()
+# # s1.display1()
+# e1.display1()
+# e1.display0()
+# s1.display2()
  
+# print(len("hello"))
+# print(len(["h","el","lo"]))
+# print(len({"key":"value","len":"value"}))
+
+
+''''emp = ["jay","viru","ram"]
+for i in reversed(emp) :
+    print(i)
+
+company ="infosys"
+for i in reversed (company):
+    print(i)'''
+
+# class Veh:
+#     def __init__(self,name,color,price):
+#         self.name = name
+#         self.color = color
+#         self.price = price
+
+#     def get_details(self):
+#         print("name is ",self.name)
+#         print("color is ",self.color)
+#         print("price is ",self.price)
+
+#     def max_speed(self):
+#         print("maximum speed limit is 100kmph")
+
+#     def gear(self):
+#         print("gear change is 6")
+
+# class Car(Veh):
+#     def max_speed(self):
+#         print("max speed limit is 140kmph")
+
+#     def gear(self):
+#         print("gear change is 9")
+
+# v1 = Veh('truck',"red",2000)
+# c1 = Car("car","white",700)
+# # v1.get_details()
+# # c1.get_details()
+
+# v1.max_speed()
+# v1.gear()
+# c1.gear()
+# c1.max_speed()
+
+# class BMW:
+#     def fuel_type(self):
+#         print("diesel")
+
+#     def max_speed(self):
+#         print("max speed is 200")
+
+# class Ferrari:
+#     def fuel_type(self):
+#         print("petrol")
+
+#     def max_speed(self):
+#         print("max speed is 180")
+
+# def car_details(obj):
+#     obj.fuel_type()
+#     obj.max_speed()
+
+# bmw = BMW()
+# ferrari = Ferrari()
+# car_details(bmw)
+
+# print("-----------------")
+
+# car_details(ferrari)
+class Vehicle:
+    color="white"
+    def __init__(self,name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+        
+        
+
+class Bus(Vehicle):
+    pass
+
+class Car(Vehicle):
+    pass
+
+v1 = Vehicle("truck",30,"30kmph")
+b1 = Bus("bus",29,"10kmph")
+c1 = Car("car",45,"56kmph")
+print(v1.color,v1.name,v1.max_speed)
+print(v1.__dict__)
+print("color:", v1.color, "name:", v1.name, "Speed:", v1.max_speed, "Mileage:", v1.mileage)
 
