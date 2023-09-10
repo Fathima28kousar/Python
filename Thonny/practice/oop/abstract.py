@@ -15,7 +15,7 @@ class Bank:
         pass
 
 print(Bank)    '''
-from abc import *
+'''from abc import *
 class Bank(ABC):
     
     @abstractmethod
@@ -34,14 +34,14 @@ from abc import *
 class Bank(ABC):
     @abstractmethod
     def cal_bal(self):
-        pass
+        pass'''
 # class Account(Bank):
 #     def cal_bal(self):
 #         print("Bal is")
 # a1 = Account()
 # a1.cal_bal()
 
-from abc import ABC,abstractmethod
+'''from abc import ABC,abstractmethod
 
 class Car (ABC):
     @abstractmethod
@@ -67,4 +67,10 @@ class Duster(Car):
 m1 = Maruti_suzuki()
 t1 = TATA()
 d1 = Duster()
-t1.mileage()
+t1.mileage()'''
+
+
+
+
+
+    

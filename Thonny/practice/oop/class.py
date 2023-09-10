@@ -312,25 +312,25 @@ for i in reversed (company):
 # print("-----------------")
 
 # car_details(ferrari)
-class Vehicle:
-    color="white"
-    def __init__(self,name, max_speed, mileage):
-        self.name = name
-        self.max_speed = max_speed
-        self.mileage = mileage
+# class Vehicle:
+#     color="white"
+#     def __init__(self,name, max_speed, mileage):
+#         self.name = name
+#         self.max_speed = max_speed
+#         self.mileage = mileage
         
         
 
-class Bus(Vehicle):
-    pass
+# class Bus(Vehicle):
+#     pass
 
-class Car(Vehicle):
-    pass
+# class Car(Vehicle):
+#     pass
 
-v1 = Vehicle("truck",30,"30kmph")
-b1 = Bus("bus",29,"10kmph")
-c1 = Car("car",45,"56kmph")
-print(v1.color,v1.name,v1.max_speed)
-print(v1.__dict__)
-print("color:", v1.color, "name:", v1.name, "Speed:", v1.max_speed, "Mileage:", v1.mileage)
+# v1 = Vehicle("truck",30,"30kmph")
+# b1 = Bus("bus",29,"10kmph")
+# c1 = Car("car",45,"56kmph")
+# print(v1.color,v1.name,v1.max_speed)
+# print(v1.__dict__)
+# print("color:", v1.color, "name:", v1.name, "Speed:", v1.max_speed, "Mileage:", v1.mileage)
 
