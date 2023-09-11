@@ -261,3 +261,8 @@ print(reverse)'''
 # range = range(n+1)
 # sum = reduce(lambda s,n:s+n,range)
 # print(sum)   
+import csv 
+f = open("data.csv","r")
+row = csv.reader(f)
+for i in row:
+    print(i)
