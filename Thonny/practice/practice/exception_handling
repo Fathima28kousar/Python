@@ -1,0 +1,204 @@
+''''num1 = 10
+num2 = 0
+try:
+    result = num1/num2
+    print(result)
+except ZeroDivisionError:
+    print("zero cannot be divided")
+    
+print("rest of the code")
+print()
+#######################################################
+num1 = 10
+num2 = 0
+try:
+    result = num1/num2
+    print(result)
+except (ZeroDivisionError) as err:
+    print(err)
+    
+
+print("rest of the code")
+'''
+'''in1 = 100
+in2 = "hello"
+try:
+    result = in1 + in2
+    print(result)
+
+except TypeError:
+    print("int and string cannot be added")
+
+print("rest of the code")
+print()
+print()'''
+'''in1 = 100
+in2 = "hello"
+try:
+    result = in1 + in2
+    print(result)
+
+except (TypeError) as obj:
+    print(obj)
+
+print("rest of the code")
+print()
+print()'''
+''''in1 = 100
+in2 = 200
+try:
+    result = in1 + in2
+    print(result)
+
+except Exception:
+    print("something went wrong")
+else:
+    print("everything is proper")
+
+finally:
+    print("done")
+
+print("rest of the code")'''
+
+
+'''num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+try:
+    div = num1/num2
+    print("Division is ",div)
+except ZeroDivisionError as var:
+    print(var)
+    print(var.__class__)
+else:
+    print("everything is proper")
+
+finally:
+    print("done")
+print("rest of the code!!!!")'''
+'''import sys
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+try:
+    div = num1/num2
+    print("Division is ",div)
+except :
+    print(sys.exc_info()[0])
+    print(sys.exc_info()[1])
+
+print("rest of the code!!!!")
+'''
+
+# try:
+#     age = int(input("Enter your age: "))
+#     if age<0:
+#         raise ValueError
+#     print("Your age is ,",age)
+
+# except ValueError:
+#     print("Enter the valid age")
+
+'''try:
+    age = int(input("Enter your age: "))
+    if age<0:
+        raise ValueError("invalid age")
+    print("Your age is ,",age)
+
+except ValueError as var:
+    print(var)'''
+
+
+
+
+'''print("Good morning")
+try:
+   
+    raise ZeroDivisionError
+except:
+    print("we are raising error")
+
+print("good morning")
+'''
+
+
+'''class InsuffientFundsErr(Exception):
+    def __init__(self):
+        pass
+        
+        
+acc_bal = 600
+def withdrawl(amount):
+    if amount > acc_bal:
+        try:
+            raise InsuffientFundsErr("out of balance")
+        except InsuffientFundsErr as err:
+            print(err)
+withdrawl(100)
+print("GM")'''
+
+acc_bal = 600 
+class ISFE(Exception):
+    def __init__(self, msg):
+        self.msg = msg
+
+def withdrawl(amount):
+    if amount>acc_bal:
+        try:
+            #raise ISFE('Buddy - check your Balance')
+            raise ZeroDivisionError("Cant Devide by Zero")
+
+        except ZeroDivisionError as err:
+            print(err)
+
+        except ISFE as err:
+            print(err)
+    else:
+        print('withdrawl and enjoy')
+
+withdrawl(1)
+print("GM")
+
+#user defined exception 
+
+class EligibiltyError(Exception):
+    def __init__(self, msg):
+        self.msg = msg 
+
+e_age = 20
+def checkEligibity(user_Age):
+
+    if user_Age> e_age:
+        print('Eligible for Marriagge and enjoy')
+    else:
+        raise EligibiltyError("Your not eligible for Marriage-Wait some time")
+
+     
+checkEligibity(17)
+print('GM')
+
+
+#user defined exception 
+
+class EligibiltyError(Exception):
+    def __init__(self, msg):
+        self.msg = msg 
+
+e_age = 20
+def checkEligibity(user_Age):
+
+    if user_Age> e_age:
+        print('Eligible for Marriagge and enjoy')
+    else:
+        try:
+            #raise EligibiltyError("Your not eligible for Marriage-Wait some time")
+            #raise ZeroDivisionError('Cant divide')
+            raise NameError('checking Exception')
+        except ZeroDivisionError as err:
+            print(err)
+        except EligibiltyError as err:
+            print(err)
+        except Exception as err:
+            print(err)
+
+     
+checkEligibity(17)
+print('GM')
