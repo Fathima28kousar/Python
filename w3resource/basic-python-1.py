@@ -117,6 +117,13 @@ a2 = add(5,5)
 print(a2)
 print(add(7,2))
 '''
-
-
+# Write a Python program to sum three given integers. However, if two values are equal, the sum will be zero.
+'''def add(a,b,c):
+    if a==b or b==c or c==a:
+        return a+b+c ==0
+    
+    else:
+        return a+b+c
+print(add(10,2,1))
+'''
 
