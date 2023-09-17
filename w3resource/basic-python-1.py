@@ -126,4 +126,20 @@ print(add(7,2))
         return a+b+c
 print(add(10,2,1))
 '''
+#
+'''color_list_1 = set(["White", "Black", "Red"])
+color_list_2 = set(["Red", "Green"])
 
+print(color_list_2.difference(color_list_1))
+print(color_list_1.difference(color_list_2))'''
+
+
+def is_vowel(char):
+    all_vowels = 'aeiou'
+    return char in all_vowels
+print(is_vowel('c'))
+print(is_vowel('e'))
+
+def is_vowel(char):
+    all_vowels = "aeiou"
+    return char in all_vowels
