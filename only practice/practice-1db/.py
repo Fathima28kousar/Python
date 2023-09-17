@@ -22,3 +22,20 @@ if not table_exists:
 
 cursor.close()
 connection.close()
+import mysql.connector
+
+try:
+    connection = mysql.connector.connect(host="localhost", user="root", password="FKW#84#kousar", database="health")
+    
+    if connection.is_connected():
+        print("Connected to MySQL database")
+        
+        # The rest of your code for table creation and data insertion goes here
+        
+except mysql.connector.Error as error:
+    print("Error: ", error)
+    
+finally:
+    if 'connection' in locals() and connection.is_connected():
+        connection.close()
+        print("Connection closed")
