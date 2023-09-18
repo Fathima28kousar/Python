@@ -1,41 +1,68 @@
-import mysql.connector
+# import mysql.connector
+# db = mysql.connector.connect(host="localhost",user ="root",password ="FKW#84#kousar",database="health")
+# dbcursor = db.cursor()
 
-connection = mysql.connector.connect(host="localhost", user="root", password="FKW#84#kousar", database="health")
-cursor = connection.cursor()
+# sql_insert = """
+#     insert into Hospital values("5","shama clinic",200)
+# """
 
-# Check if the table 'vice' already exists
-cursor.execute("SHOW TABLES LIKE 'vice'")
-table_exists = cursor.fetchone()
+# dbcursor.execute(sql_insert)
+# db.commit()
+# dbcursor.close()
+# db.close()
 
-if not table_exists:
-    create_table = """
-        CREATE TABLE vice(
-            Hospital_Id INT UNSIGNED NOT NULL,
-            name VARCHAR(32),
-            bed_count INT,
-            PRIMARY KEY(Hospital_Id)
-        )
-    """
-    cursor.execute(create_table)
+'''import mysql.connector
+db = mysql.connector.connect(host="localhost",user="root",password="FKW#84#kousar",database="health")
+dbcursor = db.cursor()
 
-# Rest of your code for inserting data
+sql_insert = """
+    insert into Hospital values(%s,%s,%s)
+"""
 
-cursor.close()
-connection.close()
-import mysql.connector
+data = [
+    ("7","sankara hospital",300),
+    ("8","manipal hospital",100)
+]
 
-try:
-    connection = mysql.connector.connect(host="localhost", user="root", password="FKW#84#kousar", database="health")
-    
-    if connection.is_connected():
-        print("Connected to MySQL database")
-        
-        # The rest of your code for table creation and data insertion goes here
-        
-except mysql.connector.Error as error:
-    print("Error: ", error)
-    
-finally:
-    if 'connection' in locals() and connection.is_connected():
-        connection.close()
-        print("Connection closed")
+dbcursor.executemany(sql_insert,data)
+db.commit()
+dbcursor.close()
+db.close()
+'''
+# import mysql.connector
+# db = mysql.connector.connect(host="localhost",user ="root",password="roots",database="company1")
+# dbcursor = db.cursor()
+
+# sql_create ="""
+#     CREATE TABLE employee1(
+#     eid INT NOT NULL,
+#     name VARCHAR(50),
+#     salary INT DEFAULT 20000,
+#     location VARCHAR(50)
+#     )
+# """
+# dbcursor.execute(sql_create)
+# db.commit()
+# dbcursor.close()
+# db.close()
+'''import mysql.connector
+db = mysql.connector.connect(host="localhost",user ="root",password="roots",database="company1")
+dbcursor = db.cursor()
+
+sql_st="""
+    insert into employee1 values(%s,%s,%s,%s)
+"""
+data = [
+    (102,"rahul",6500,"delhi"),
+    (103,"priyanka",7500,"mumbai"),
+    (104,"modi",4000,"gujarat")
+]
+
+dbcursor.executemany(sql_st,data)
+db.commit()
+dbcursor.close()
+db.close()
+'''
+
+
+
