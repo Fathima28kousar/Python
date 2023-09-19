@@ -63,6 +63,32 @@ db.commit()
 dbcursor.close()
 db.close()
 '''
+import mysql.connector
+try:
+    conn = mysql.connector.connect(
+        host = "localhost",
+        user = "root",
+        password="roots",
+        database="codeyug"
+    )
+
+    if conn.is_connected():
+        print("connected")
+except Exception as obj:
+    print(obj)
+cur = conn.cursor()
+cur.execute("""CREATE TABLE IF NOT EXISTS tutorial(
+    video_id INT PRIMARY KEY,
+    video_name VARCHAR(100) NOT NULL,
+    video_views INT,
+    watchtime FLOAT
+)""")  
+cur.execute("DESC tutorial")
+for data in cur:
+    print(data[0])  
+conn.commit()
+cur.close()
+conn.close()
 
 
 
