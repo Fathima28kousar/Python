@@ -97,44 +97,77 @@ db.close()
 
 # cur.close()
 # conn.close()
-import mysql.connector
-try:
-    db = mysql.connector.connect(
-        host= "localhost",
-        user="root",
-        password = "roots",
-        database="codeyug1"
-    )
+# import time
 
-    if db.is_connected():
-        print("Connected!")
-
-except Exception as obj:
-    print("Not connected")
-
-cur = db.cursor()
-
-sql = "SELECT * FROM tutorial1"
+# while True:
+#     # Get the current time
+#     current_time = time.strftime('%H:%M:%S %p')
+    
+#     # Print the current time to the console
+#     print(current_time, end='\r',flush=True)
+    
+#     # Wait for 1 second before updating the time again
+#     time.sleep(1)
 
 
+# import random
 
-try:
-    cur.execute(sql)
-    data = cur.fetchall()
-    for ele in data:
-        print(ele)
-    for ele in data:
-        print(ele)
-    print(list(data))   
-    print(f"{len(data)} rows got fetched") 
-    db.commit()
-    print()
+# def number_guessing_game():
+#     # Generate a random number between 1 and 100
+#     secret_number = random.randint(1, 100)
+    
+#     # Initialize variables
+#     attempts = 0
+#     max_attempts = 10
+    
+#     print("Welcome to the Number Guessing Game!")
+#     print("I'm thinking of a number between 1 and 100.")
+    
+#     while attempts < max_attempts:
+#         try:
+#             guess = int(input("Guess the number: "))
+            
+#             if guess < 1 or guess > 100:
+#                 print("Please enter a number between 1 and 100.")
+#                 continue
+            
+#             attempts += 1
+            
+#             if guess < secret_number:
+#                 print("Too low! Try again.")
+#             elif guess > secret_number:
+#                 print("Too high! Try again.")
+#             else:
+#                 print(f"Congratulations! You've guessed the number {secret_number} in {attempts} attempts.")
+#                 break
+        
+#         except ValueError:
+#             print("Invalid input. Please enter a valid number.")
+    
+#     if attempts == max_attempts:
+#         print(f"Sorry, you've run out of attempts. The secret number was {secret_number}.")
 
-except:
-    db.rollback()
-    print("Something went wrong")
-
-cur.close()
-db.close()
+# if __name__ == "__main__":
+#     number_guessing_game()
 
 
+# num1 = 10
+# num2 = 20
+# print(num1+num2)
+# print(num1.__add__(num2))
+# print(int.__add__(num1,num2))
+# print(dir(int))
+
+# num = int(input("Enter any numbet between 1500 and 2700: "))
+# for i in range(1500,2701):
+#     if num%7==0 or num%5==0:
+#         print("it is divisible by both")
+
+#     else:
+#         print("divisible")
+
+
+
+
+        
+        
