@@ -168,6 +168,29 @@ db.close()
 
 
 
+# class Finance:
+#     def __init__(self):
+#         self.revenue = 10000
+#         self.number_of_sales = 114
 
+# f1 = Finance()
+# print(f1.__dict__)
+
+# class HR:
+#     def __init__(self):
+#         self.number_of_emp =32
+#         f1.revenue = 1
         
-        
+# h1 = HR()
+# print(h1.__dict__)
+# print(f1.__dict__)
+
+class Finance:
+    def __init__(self):
+        self.__revenue = 1000
+        self.__number_of_sales=114
+
+f1 = Finance()
+print(f1.__dict__)
+print(f1.revenue)
+print(f1.number_of_sales)
