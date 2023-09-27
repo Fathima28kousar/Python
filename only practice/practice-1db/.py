@@ -222,5 +222,76 @@ print(f1.__revenue)
 # print(num1.__add__(num2))
 # print(int.__add__(num1,num2))
 
+''
 
+# import re
+# input = ''' Full stack developer,python developer,java developer'''
+# found = re.search("python",input)
+# print(found)
+# if found:
+#     print("Match Found")
 
+# else:
+#     print("Match not Found")
+
+# print(found.start())
+# print(found.end())
+# print(found.group())
+'''found = re.match("python",input)
+print(found)
+if found:
+    print("Match Found")
+
+else:
+    print("Match not Found")
+'''
+
+'''import re
+input = "Mobile Number : 959161"
+found =re.sub("[0-9]","x",input)
+print(found)
+'''
+# import re 
+# input = "Pro stack Academy"
+# result = re.sub("[a-z|A-Z]","9",input)
+# print(result)
+
+'''import re 
+text = "on 2023-09-17, the conference will begin. The event will end on 2023-09-10"
+data_pattern = r"\d{4}-\d{2}-\d{2}"
+dates = re.findall(data_pattern,text)
+print(dates)'''
+
+'''import re
+pattern = "PYTHON"
+data = "python is very powerfull programming language.python has more features"
+match = re.match(pattern,data,re.IGNORECASE)
+print(match)
+if match:
+    print("found:",match.group())
+else:
+    print("Not found")'''
+
+'''import re
+pattern = re.compile(r"python",re.IGNORECASE)
+data = "python is a proper language."
+match = re.match(pattern,data)
+print(match)'''
+
+'''import re
+txt = "the spain 488 huge The The spain"
+
+result = re.findall(r"\w",txt)
+print(result)
+
+if result:
+    print("Yes there is a match")
+
+else:
+    print("No there is no match")
+'''
+
+import re
+txt = r"The rain in train"
+x = re.sub("\s","9",txt,2)
+print(x)
