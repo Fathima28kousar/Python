@@ -121,7 +121,7 @@ for key, value in todo_data.items():
 # fp = open("emp.json","w")
 # json.dump(data,fp)
 # fp.close
-import mysql.connector
+'''import mysql.connector
 
 # Replace these placeholders with your database credentials
 host = "your_host"
@@ -139,5 +139,68 @@ connection = mysql.connector.connect(
 
 # Create a cursor object to interact with the database
 cursor = connection.cursor()
+'''
+'''import csv
+f = open ("api_data.csv","r")
+row = csv.reader(f)
+for i in row :
+    print(i)'''
+
+'''import csv
+f = open("api_data.csv","r")
+row = csv.reader(f)
+print(row)
+'''
+
+'''import csv
+f = open("api_data.csv","r")
+row = csv.reader(f)
+for i in row:
+    print(i[0],i[2])'''
+
+'''import csv
+f = open("api_data.csv","r")
+row = csv.reader(f)
+next(row)
+next(row)
+for i in row:
+    print(i[0],i[2])
+'''
 
 
+'''import csv
+f = open("api_data.csv","r")
+row = csv.reader(f,delimiter='|')
+for i in row:
+    print(i)'''
+
+'''import csv
+f = open("data.csv","w")
+wr = csv.writer(f)
+wr.writerow(['Name','Class'])
+wr.writerow(['Amit','XII'])
+wr.writerow(['Anita','X'])
+f.close()'''
+
+'''import csv
+fields = ['Name','Class','Subject']
+rows = [['Amit','XII','CS'],
+        ['Sumit','X','IP'],
+        ['Ashu','XI',"CSV"]]
+f = open("data1.csv","w",newline='')
+wr = csv.writer(f)
+wr.writerow(fields)
+wr.writerow(rows)
+f.close()'''
+
+'''import csv
+f = open("api_data.csv","r")
+row = csv.DictReader(f)
+for i in row:
+    print(i)'''
+
+'''import csv
+f = open("api_data.csv","r")
+row = csv.DictReader(f,fieldnames=["Name","Class","Subject"])
+for i in row:
+    print(i)'''

@@ -296,3 +296,28 @@ txt = r"The rain in train"
 x = re.sub("\s","9",txt,2)
 print(x)
 '''
+'''import json
+d = {"first_name":"Torre","available":None,"insurance":False,"email":"tnother0@phpbb.com","gender":"Male"}
+# data= [22,False,None]
+# data1= (22,False,None)
+# age = "22"
+# var = None
+print(json.dumps(d,indent=6))
+print(json.dumps(d,indent=6,separators=(".","|"),sort_keys=True))
+# print(type(json.dumps(d)))
+# print(json.dumps(data))
+# print(json.dumps(data1))'''
+import json
+thisdict = {
+  'brand': 'Ford',
+  'model': 'Mustang',
+  'year': 1964
+}
+
+json_dumps= json.dumps(thisdict,indent=4)
+print(json_dumps)
+print(type(json_dumps))
+
+data1 = json.loads(json_dumps)
+print(data1)
+print(type(data1))
