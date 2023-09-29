@@ -199,8 +199,15 @@ row = csv.DictReader(f)
 for i in row:
     print(i)'''
 
+
 '''import csv
 f = open("api_data.csv","r")
 row = csv.DictReader(f,fieldnames=["Name","Class","Subject"])
+for i in row:
+    print(i)'''
+
+'''import csv
+f = open("api_data.csv",'r')
+row = csv.DictReader(f,fieldnames=['Name','Class','Subject'])
 for i in row:
     print(i)'''

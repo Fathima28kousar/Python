@@ -1,0 +1,26 @@
+product_id,product_name,price
+3,ac diam cras,606
+4,morbi porttitor ,529
+2,felis fusce ,585
+15,sollicitudin,251
+18,curabitur convallis ,767
+20,dapibus duis,844
+7,tincidunt eget,601
+2,feugiat non pretium,463
+4,varius integer,910
+3,eu magna vulputate,482
+
+'''import csv
+f = open('product.csv', 'r')
+d = csv.reader(f)
+next(d)  # Skip the header row
+
+print("products more than 300: ")
+for i in d:
+    if int(i[2]) > 300:  # Check if marks are more than 80
+        print("product_id: ", i[0])
+        print("product_name: ", i[1])
+        print("price: ", i[2])
+        
+
+f.close()'''
