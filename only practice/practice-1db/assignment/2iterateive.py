@@ -33,8 +33,8 @@ while i>=10:
     print(i)
     i-=1 ''' 
 #6
-i=0
-'''while i<=20:
+'''i=0
+while i<=20:
     i+=1
     if i%2==0:
         print(i)
@@ -51,6 +51,10 @@ while i<=20:
         print(i)
 '''
 #9
+'''for i in range(10):
+    if i%2 ==0:
+        print(i)'''
+#10
 '''for i in range(10):
     if i%2 !=0:
         print(i)'''
@@ -104,8 +108,8 @@ print("Reverse of the digits:", reverse)'''
 for i in list:
     if i%2 == 0:
         print(i,end=" ")'''
-
-def fibo(n):
+#18
+'''def fibo(n):
     if n == 1:
         return 0
     if n == 2:
@@ -114,9 +118,7 @@ def fibo(n):
 
 n = int(input("Enter no. of terms: "))
 for i in range(1, n + 1):
-    print(fibo(i), end=" ")
-
-
+    print(fibo(i), end=" ")'''
 
 #19
 '''num = int(input("Enter a number: "))

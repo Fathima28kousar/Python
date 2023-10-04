@@ -125,6 +125,29 @@ numbers.sort(reverse=True)
 print("Ascending ordered numbers are: ",numbers)'''
 
 #14
+'''n1 = float(input("Enter the first number: "))
+n2 = float(input("Enter the second number: "))
+n3 =  float(input("Enter the third number: "))
+minimum = min(n1,n2,n3)
+print("The minimum number is: ",minimum)'''
 #15
-#16,17-to be continued
+'''n1 = float(input("Enter the first number: "))
+n2 = float(input("Enter the second number: "))
+n3 =  float(input("Enter the third number: "))
+maximum = max(n1,n2,n3)
+print("The maximum number is: ",maximum)'''
+#16
+'''a = float(input("Enter First Number:"))
+b = float(input("Enter Second Number:"))
+c = float(input("Enter Third Number:"))
 
+minimum = a if a<b and a<c else b if b<c and a<c else c
+print("The minimum number is",minimum)'''
+
+# 17
+'''a = float(input("Enter First Number:"))
+b = float(input("Enter Second Number:"))
+c = float(input("Enter Third Number:"))
+
+maximum = a if a>b and a>c else b if b>c and b>a else c
+print("The maximumm number is",maximum)'''
