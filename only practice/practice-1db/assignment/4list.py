@@ -10,7 +10,7 @@ reversed_list = list(reversed(my_list))
 print(reversed_list)  # Output: [5, 4, 3, 2, 1]'''
 #2
 '''l1 = ["m","na","i","fath"]
-l2 = ["y","me","s","ima"]
+l2 = ["y","me","s","ima"]   
 l3 = []
 for i in range(len(l1)):
     l3.append(l1[i]+l2[i])
@@ -52,5 +52,35 @@ for i in l1:
 #     if l1[i] ==item_to_replace:
 #         l1[i] = new_value
 # print(l1)
-l1 = [1,2,3,4,["python","java","c++",(10,20,30)],5,6,7,["apple","banana","orange"]]
-print(l1[8][2][5])
+
+
+#8
+'''l1 = [1,2,3,4,5,[6,7,8]]
+l1.extend([[9,10]])
+print(l1)
+
+nested_list = [1,2,3]
+new_sub_list =[4,5]
+nested_list+=[new_sub_list]
+print(nested_list)
+'''
+#7
+'''l1 = [1,2,3,2]
+specified = 2
+number = 1111111111111111111111
+index = l1.index(specified)
+l1.insert(index+1,number)
+print(l1)
+'''
+#6
+l2 = ["s","","e","f","E","w","q","b"]
+l3 = [i for i in l2 if i!=""]
+print(l3)
+
+
+list1 = [1,2,3]
+list2 = ['a','b','c']
+for item1,item2 in zip(list1,list2):
+    print(item1,item2)
+
+help(zip)
