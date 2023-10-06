@@ -1,3 +1,4 @@
+#1
 '''str1 = 'This is a world of python,and its a easiest programming languages on earth.'
 vowels = 0
 for i in str1:
@@ -73,9 +74,11 @@ print(string1[::-1])'''
         print(". " + rotated_str)
 
 input_str = "stack"
-rotate(input_str)
-'''
-str = input("Enter the string: ")
+rotate(input_str)'''
+#6
+'''str = input("Enter the string: ")
 str2 = str[1:]+str[0]
 print(str2)
+'''
+
 

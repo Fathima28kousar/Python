@@ -1,3 +1,4 @@
+#1
 '''L =[]
 count =0
 for i in range(2000,3201):
@@ -7,6 +8,7 @@ for i in range(2000,3201):
 print(L)
 print(count)
 '''
+#2
 '''def factorial(n):
     res = 1
     for i in range(2, n+1):
