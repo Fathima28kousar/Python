@@ -312,7 +312,7 @@ f = open('data0.csv','r')
 row = csv.DictReader(f,fieldnames=['roll','name','class'])
 for i in row:
     print(i)'''
-import csv
+'''import csv
 f = open('data.csv','r')
 d = csv.reader(f)
 next(d)
@@ -321,3 +321,41 @@ next(d)
 for row in d:
     if len(row)>=5:
         print(row[0],row[2])
+'''
+# a,b,c = input("Enter values: ").split()
+# print("First no. is {} second number is {} and third name is {}".format(a,b,c))
+
+# x = list(map(int,input("Enter values: ")))
+# print("list of students: ",x)
+
+# num = int(input("Enter the number: "))
+# letters = ['','one','two','three','four','five','six','seven','eight','nine']
+# def word_of_number(num):
+#     if num ==0:
+#         return 'zero'
+#     elif num>0:
+#         return letters[num]
+# w = word_of_number(num)
+# print("The word of the number is: ",w)
+
+# num1 = int(input("Enter the number: "))
+# num2 = int(input("Enter the number: "))
+# num3 = int(input("Enter the number: "))
+# greatest =max(num1,num2,num3)
+# print("The greatest number among three is ",greatest)
+
+# number = int(input("Enter the number: "))
+# for i in range(1,11):
+#     result = number*i
+#     print(result)
+
+# print()
+
+# number = int(input("Enter number: "))
+# i = 0
+# while i<10:
+#     i+=1
+#     result = number*i
+#     print(result)
+
+
