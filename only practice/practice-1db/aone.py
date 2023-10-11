@@ -73,14 +73,52 @@ while x:
 if x :
     print("invalid password")'''
 
-num = int(input("Enter the number: "))
-sum = 0
-temp = num
-while temp>0:
-    digit = temp%10
-    sum = sum+digit**3
-    temp =temp//10
-if num ==sum:
-    print(num,"is an armstrong number")
-else:
-    print(num,"not an armstrong number")
+# import mysql.connector
+
+# try:
+#     conn = mysql.connector.connect(
+#         host = 'localhost',
+#         user = 'root',
+#         password = 'roots'
+#     )
+
+#     if conn.is_connected():
+#         print("connected")
+# except Exception as obj:
+#     print(obj)
+
+# conn.close()
+
+# ''import mysql.connector
+
+# try:
+#     conn = mysql.connector.connect(
+#         host ='localhost',
+#         user = 'root',
+#         password = 'roots',
+#         database = 'codeyug'    
+#     )
+#     if conn.is_connected():
+#         print("connected")
+# except :
+#     print("Cannot connect")
+# cur = conn.cursor()
+# sql = '''
+#      INSERT INTO tutorial(id,name,views,watchtime)
+#      VALUES(107,'java basics',2435,22)
+# ''' 
+# try:
+#     cur.execute(sql)
+#     conn.commit()
+#     cur.execute("DESC tutorial")
+#     print("Successfully inserted ")
+#     print(f'{cur.rowcount} rows inserted')
+# except:
+#     conn.rollback()
+#     print("Something went wrong")
+
+# cur.close()
+# conn.close()
+
+def sum_of_list(lists):
+    if len()
