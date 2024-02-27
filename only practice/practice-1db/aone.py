@@ -120,5 +120,13 @@ if x :
 # cur.close()
 # conn.close()
 
-def sum_of_list(lists):
-    if len()
+def long_function_name(
+        var_one, var_two, var_three,
+        var_four):
+    print(var_one)
+
+
+def long_function_name(
+        var_one, var_two, var_three,
+        var_four):
+    print(var_one)
